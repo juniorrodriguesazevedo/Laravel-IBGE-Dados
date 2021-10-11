@@ -6,6 +6,8 @@
 
     <h1 class="h1">Habitantes por Estado</h1>
 
+    @include('includes.alerts')
+
     <form class="row m-4" action="{{ route('state.store') }}" method="post">
       @csrf
       @method('post')
@@ -59,12 +61,14 @@
           </tr>
           </thead>
           <tbody>
+            @if (isset($city, $population))
               @foreach (array_combine($city, $population) as $city => $population)
                   <tr>
                       <td>{{ Str::beforeLast($city, '-') }}</td>
                       <td>{{ Str::replace(',', '.', number_format($population)) }}</td>
                   </tr>
               @endforeach
+            @endif
           </tbody>
       </table>
 </div>

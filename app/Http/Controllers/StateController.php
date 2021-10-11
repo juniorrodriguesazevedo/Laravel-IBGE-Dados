@@ -31,6 +31,10 @@ class StateController extends Controller
     {
         $id = $request->state;
 
+        if ($id == '00') {
+            return redirect()->route('home')->with('error', 'Selecione um estado válido');
+        }
+
         return redirect()->route('state.index', $id);
     }
 
@@ -66,6 +70,9 @@ class StateController extends Controller
                 break;
             case '51':
                 return 'Mato Grosso';
+                break;
+            case '50':
+                return 'Mato Grosso do Sul';
                 break;
             case '31':
                 return 'Minas Gerais';
