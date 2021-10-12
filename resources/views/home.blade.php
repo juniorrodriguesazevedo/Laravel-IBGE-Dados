@@ -50,7 +50,7 @@
 
       @if (isset($numberOfCities, $state))
         <b>Estado: </b>{{ $state }} <br>
-        <b>Número de Cidades: </b> {{ $numberOfCities }}
+        <b>Número de Municípios: </b> {{ $numberOfCities }}
       @endif
 
       <table class="table table-bordered table-striped table-hover mt-4">
