@@ -1,5 +1,6 @@
 ## Habitantes por Estado
 Site feito em PHP/Laravel onde obtenho dados de projeção da população por estado/municipio a partir de uma API pública do IBGE.
+
 Link: [https://habitantes-estado.herokuapp.com/](https://habitantes-estado.herokuapp.com/)
 
 ### Instalação: 
