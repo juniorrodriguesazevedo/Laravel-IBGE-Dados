@@ -37,7 +37,7 @@
             <option value="11">Rondônia</option>
             <option value="14">Roraima</option>
             <option value="42">Santa Catarina</option>
-            <option value="25">São Paulo</option>
+            <option value="35">São Paulo</option>
             <option value="28">Sergipe</option>
             <option value="17">Tocantins</option>
             <option value="53">Distrito Federal</option>
