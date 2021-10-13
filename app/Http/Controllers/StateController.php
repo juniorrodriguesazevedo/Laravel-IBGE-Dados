@@ -110,7 +110,7 @@ class StateController extends Controller
             case '42':
                 return 'Santa Catarina';
                 break;
-            case '25':
+            case '35':
                 return 'São Paulo';
                 break;
             case '28':
