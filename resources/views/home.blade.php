@@ -2,7 +2,7 @@
 @section('title', 'Habitantes por Estado')
 
 @section('content')
-<div class="container text-center p-5">
+<div class="container text-center">
 
     <h1 class="h1">Habitantes por Estado</h1>
 

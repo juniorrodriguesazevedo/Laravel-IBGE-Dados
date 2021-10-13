@@ -10,10 +10,13 @@
 
     <title>@yield('title')</title>
   </head>
-  <body>
+  <body class="p-4">
 
     @yield('content')
 
+    <footer class="text-center">
+      <strong>Todos os dados são extraídos através de uma API pública do IBGE com base no último senso de 2021</strong>
+    </footer>
       <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
