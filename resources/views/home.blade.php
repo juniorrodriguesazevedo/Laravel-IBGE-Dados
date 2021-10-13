@@ -9,8 +9,8 @@
     @include('includes.alerts')
 
     <form class="row m-4" action="{{ route('state.store') }}" method="post">
-      @csrf
       @method('post')
+      @csrf
       <div class="col-11">
         <select class="form-select" name="state">
             <option value="00" selected>Selecione um estado...</option>
