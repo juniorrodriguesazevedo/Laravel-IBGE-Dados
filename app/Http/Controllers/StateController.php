@@ -10,7 +10,6 @@ class StateController extends Controller
     public function index(Request $request, $id)
     {
         $response = $this->api($id);
-
         $base = $response[0]['resultados'][0]['series'];
         $numberOfCities = count($base);
         $state = $this->getState($id);
