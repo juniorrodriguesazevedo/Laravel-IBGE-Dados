@@ -9,8 +9,7 @@ class StateController extends Controller
 {
     public function index(Request $request, $id)
     {
-        $api = Http::get("https://servicodados.ibge.gov.br/api/v3/agregados/6579/periodos/2021/variaveis/9324?localidades=N6[N3[{$id}]]");
-        $response = $api->json();
+        $response = $this->api($id);
 
         $base = $response[0]['resultados'][0]['series'];
         $numberOfCities = count($base);
@@ -36,6 +35,15 @@ class StateController extends Controller
         }
 
         return redirect()->route('state.index', $id);
+    }
+
+    public function api($id)
+    {
+        $api = Http::get("https://servicodados.ibge.gov.br/api/v3/agregados/6579/periodos/2021/variaveis/9324?localidades=N6[N3[{$id}]]");
+
+        $response = $api->json();
+
+        return $response;
     }
 
     public function getState($id)
