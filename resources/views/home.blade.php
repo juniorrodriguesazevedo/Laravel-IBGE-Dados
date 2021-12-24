@@ -44,7 +44,7 @@
         </select>
       </div>
       <div class="col-1">
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-primary">Buscar</button>
       </div>
     </form>
 
